@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 venv/
 .env
+*yolov8n.pt
+*yolov8n-seg.pt
 
 # Streamlit
 .streamlit/
