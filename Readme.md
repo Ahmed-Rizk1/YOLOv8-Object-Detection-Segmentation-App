@@ -15,6 +15,16 @@ Seamlessly process images, videos, or live webcam feeds with a modern UI.
   - Leverages **YOLOv8** for state-of-the-art accuracy.
   - Supports both bounding box detection and pixel-wise segmentation.
 
+- **📊 Analytics Dashboard**:
+  - **Real-time Stats**: View total object counts, average confidence, and FPS.
+  - **Charts**: Visual distribution of detected classes and confidence scores.
+  - **Timeline**: Track detection activity over video frames.
+
+- **📐 Region of Interest (ROI)**:
+  - **Interactive Drawing**: Use the built-in canvas to draw Polygons or Rectangles on images.
+  - **Precision Filtering**: Analyze only the specific parts of the image you care about.
+  - **Visual Feedback**: Clearly see the ROI boundary overlaid on results.
+
 - **Versatile Input Support**:
   - **Images**: `.jpg`, `.jpeg`, `.png`
   - **Videos**: `.mp4`, `.mov`, `.avi`
@@ -38,7 +48,9 @@ This project follows a modular architecture for scalability and maintainability:
 ├── src/
 │   ├── settings.py   # Configuration constants
 │   ├── model.py      # YOLOv8 model loading & handling
-│   └── utils.py      # Helper functions (plotting, effects)
+│   ├── utils.py      # Helper functions (plotting, effects)
+│   ├── analytics.py  # Dashboard & Statistics logic
+│   └── roi.py        # Canvas & ROI filtering logic
 ├── app.py            # Main Streamlit application entry point
 ├── requirements.txt  # Project dependencies
 └── README.md         # Documentation
