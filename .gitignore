@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Streamlit
+.streamlit/
+
+# Media
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.mov
+*.avi
+temp/
+
+# Project specific
+output.jpg
